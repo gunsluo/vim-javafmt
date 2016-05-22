@@ -26,6 +26,8 @@ function! s:javafmt(...) abort
     silent! %d _
     call setline(1, split(lines, "\n"))
     call setpos('.', pos)
+  else
+    echo lines
   endif
 endfunction
 
